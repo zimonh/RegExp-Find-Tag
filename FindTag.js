@@ -1,5 +1,7 @@
+/* by: ZIMONH src: https://github.com/zimonh/RegExp-FindTag
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 const FindTag = tag =>{
-return new RegExp(`<(${tag})(| [^>]*)>(([^<]+|<?(?!\\/\\1>))+)<\\/\\1>`,"gi");
+return new RegExp(`<(${tag})(| [^>]*)>(([^<]+|<?(?!\\/\\1>))+)<\\/\\1>`,'gi');
     //Group ___$1___^       ^         ^                       ^
     //Attributes _____$2____|         |                       |
     //Stuff between tags ______$3_____|                       |
