@@ -1,4 +1,4 @@
-/* by: ZIMONH src: https://github.com/zimonh/RegExp-FindTag
+/* by: ZIMONH src: https://github.com/zimonh/RegExp-Find-Tag
 License: https://creativecommons.org/licenses/by-nc-sa/4.0/ */
 const FindTag = tag =>{
 return new RegExp(`<(${tag})(| [^>]*)>(([^<]+|<?(?!\\/\\1>))+)<\\/\\1>`,'gi');
